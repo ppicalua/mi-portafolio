@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto — Pedro Picalua | Diseñador Web Freelance</title>
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Solicita tu sitio web profesional. Contacta a Pedro Picalua, diseñador y desarrollador web freelance.">
+    <meta property="og:title" content="Contacto — Diseñador Web">
+    <meta property="og:description" content="Solicita tu sitio web profesional hoy mismo.">
+    <meta property="og:image" content="img/og/contacto.webp">
+    <meta property="og:type" content="website">
+    
+    <link rel="icon" href="/favicon.ico">
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">
+    <link rel="preload" href="css/styles.css" as="style">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body class="pagina-contacto">
+
+    <div data-include="components/header.html"></div>
+
+    <section class="banner-interno">
+        <div class="banner-contenido">
+            <h2>Contacto</h2>
+            <p>Convierte tu idea en un sitio web profesional</p>
+        </div>
+    </section>
+       
+    <main class="contenedor sombra contacto-grid">     
+
+        <section>
+            <h2>Contáctame</h2>
+        
+            <form id="form-contacto" class="formulario">
+                <fieldset>
+                    <legend>Contáctame llenando el formulario</legend>
+        
+                    <div class="contenedor-campos">
+        
+                        <div class="campo">
+                            <label for="nombre">Nombre</label>
+                            <input id="nombre" name="nombre" class="input-text" type="text" placeholder="Tu Nombre" required>
+                        </div>
+        
+                        <div class="campo">
+                            <label for="telefono">Teléfono</label>
+                            <input id="telefono" name="telefono" class="input-text" type="tel" pattern="3[0-9]{9}" placeholder="3XXXXXXXXX" required>
+                        </div>
+        
+                        <div class="campo">
+                            <label for="correo">Correo electrónico</label>
+                            <input id="correo" name="correo" class="input-text" type="email" placeholder="Tu Email" required>
+                        </div>
+        
+                        <div class="campo">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" class="input-text" placeholder="Escribe tu mensaje"
+                                required></textarea>
+                        </div>
+        
+                    </div>
+        
+                    <div class="alinear-derecha flex">
+                        <input class="boton w-sm-100" type="submit" value="Enviar">
+                    </div>
+
+                    <div id="loader" class="alert alert-loader">
+                        Enviando mensaje...
+                    </div>
+                    
+                    <div id="mensaje-exito" class="alert alert-exito">
+                        ✅ Mensaje enviado correctamente. Te responderé pronto.
+                    </div>
+                    
+                    <div id="mensaje-error" class="alert alert-error">
+                        ❌ Error al enviar. Intenta nuevamente.
+                    </div>
+                    
+                    <!-- Campo oculto anti-spam -->
+                    <input type="text" id="empresa" name="empresa" class="campo-oculto">
+        
+                </fieldset>
+            </form>
+        </section>     
+        
+    </main>
+
+    <div data-include="components/footer.html"></div>
+
+    <script src="js/include.js"></script>      
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="js/contacto.js"></script>
+</body>
+
+</html>

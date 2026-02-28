@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre mí | Pedro Picalua — Desarrollador Web</title>
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Conoce la trayectoria, habilidades y enfoque profesional de Pedro Picalua como desarrollador web freelance.">
+    <meta property="og:title" content="Sobre mí — Pedro Picalua">
+    <meta property="og:description" content="Conoce la experiencia y enfoque de mi trabajo como desarrollador web.">
+    <meta property="og:image" content="img/og/sobremi.webp">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="/favicon.ico">
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">
+    <link rel="preload" href="css/styles.css" as="style">
+    <link href="css/styles.css" rel="stylesheet">    
+</head>
+
+<body>
+
+    <div data-include="components/header.html"></div>
+
+    <section class="banner-interno">
+        <div class="banner-contenido">
+            <h2>Sobre mí</h2>
+            <p>Conoce quién está detrás de los proyectos</p>
+        </div>
+    </section>
+
+    <main class="contenedor sombra">
+            
+        <div class="sobre-mi">
+
+            <div class="sobre-mi-imagen">
+                <img src="img/perfilPedro.webp" alt="Pedro Picalua, desarrollador web frontend freelance" 
+                    width="300" 
+                    height="300"
+                    loading="lazy"
+                >
+            </div>
+
+            <div class="sobre-mi-texto">
+                <p>
+                    Estudiante de Ingeniería de Sistemas (9.º semestre) y Frontend Developer con enfoque 
+                    en UI Development y Design-to-Code. Experiencia en creación de interfaces web modernas 
+                    utilizando HTML5, CSS3 y JavaScript (ES6+), aplicando principios de Responsive Web Design, 
+                    accesibilidad (WCAG), usabilidad y jerarquía visual.
+                </p>
+
+                <p>
+                    Capacidad para transformar diseños de Figma en código funcional optimizado para producción, 
+                    asegurando compatibilidad cross-browser, rendimiento web (Web Performance) y experiencia de 
+                    usuario consistente en dispositivos móviles y de escritorio. Manejo de control de versiones 
+                    con Git/GitHub y buenas prácticas de desarrollo frontend.
+                </p>
+            </div>
+
+        </div>
+
+        <h3>Habilidades</h3>
+
+        <div class="habilidades-categorias">
+        
+            <button class="btn-habilidad" data-modal="frontend">
+                Frontend Development
+            </button>
+        
+            <button class="btn-habilidad" data-modal="uiux">
+                UI Development & UX
+            </button>
+        
+            <button class="btn-habilidad" data-modal="optimizacion">
+                Optimización y Calidad
+            </button>
+        
+            <button class="btn-habilidad" data-modal="herramientas">
+                Herramientas
+            </button>
+        
+        </div>
+
+        <h3>Mi proceso de trabajo</h3>
+
+        <div class="proceso">
+        
+            <div class="paso" data-modal="analisis">
+                <img src="img/analisis.webp" alt="Fase de análisis" class="proceso-img"
+                    width="600"
+                    height="400"
+                    loading="lazy"
+                >
+                <h4>1. Análisis</h4>
+                <p>Comprensión de objetivos y usuarios.</p>
+            </div>
+        
+            <div class="paso" data-modal="diseno">
+                <img src="img/diseño.webp" alt="Fase de diseño" class="proceso-img"
+                    width="600"
+                    height="400"
+                    loading="lazy"
+                >
+                <h4>2. Diseño</h4>
+                <p>Prototipo visual centrado en experiencia.</p>
+            </div>
+        
+            <div class="paso" data-modal="desarrollo">
+                <img src="img/desarrollo.webp" alt="Fase de desarrollo" class="proceso-img"
+                    width="600"
+                    height="400"
+                    loading="lazy"
+                >
+                <h4>3. Desarrollo</h4>
+                <p>Implementación optimizada y responsive.</p>
+            </div>
+        
+        </div>
+
+        <div class="cta">
+            <a class="cta-boton" href="contacto.html">
+                Hablemos de tu proyecto
+            </a>
+        </div>
+    </main>
+
+    <!-- MODAL GENERAL -->
+    <div id="overlay"></div>
+    
+    <!-- FRONTEND -->
+    <div class="modal" id="frontend" role="dialog" aria-modal="true" aria-labelledby="titulo-frontend">
+        <h3 id="titulo-frontend">Frontend Development</h3>
+        <ul>
+            <li>HTML5 — Avanzado</li>
+            <li>CSS3 (Flexbox, Grid, Responsive Web Design) — Avanzado</li>
+            <li>JavaScript — Intermedio</li>
+            <li>Manipulación del DOM</li>
+            <li>Componentización y Mobile First</li>
+        </ul>
+        <button class="cerrar" aria-label="Cerrar ventana">Cerrar</button>
+    </div>
+    
+    <!-- UI / UX -->
+    <div class="modal" id="uiux" role="dialog" aria-modal="true" aria-labelledby="titulo-uiux">
+        <h3 id="titulo-uiux">UI Development & UX</h3>
+        <ul>
+            <li>Design-to-Code (Figma → Código)</li>
+            <li>Prototipado en Figma</li>
+            <li>Usabilidad y jerarquía visual</li>
+            <li>Accesibilidad básica (WCAG)</li>
+            <li>Diseño responsive</li>
+        </ul>
+        <button class="cerrar" aria-label="Cerrar ventana">Cerrar</button>
+    </div>
+    
+    <!-- OPTIMIZACIÓN -->
+    <div class="modal" id="optimizacion" role="dialog" aria-modal="true" aria-labelledby="titulo-optimizacion">
+        <h3 id="titulo-optimizacion">Optimización y Calidad</h3>
+        <ul>
+            <li>Web Performance básica</li>
+            <li>Cross-browser compatibility</li>
+            <li>Maquetación semántica</li>
+        </ul>
+        <button class="cerrar" aria-label="Cerrar ventana">Cerrar</button>
+    </div>
+    
+    <!-- HERRAMIENTAS -->
+    <div class="modal" id="herramientas" role="dialog" aria-modal="true" aria-labelledby="titulo-herramientas">
+        <h3 id="titulo-heramientas">Herramientas</h3>
+        <ul>
+            <li>Git / GitHub (Control de versiones)</li>
+            <li>Visual Studio Code</li>
+            <li>Figma</li>
+            <li>Adobe XD</li>
+        </ul>
+        <button class="cerrar" aria-label="Cerrar ventana">Cerrar</button>
+    </div>
+
+    <div class="modal" id="analisis" role="dialog" aria-modal="true" aria-labelledby="titulo-analisis">
+        <h3 id="titulo-analisis">Fase 1 — Análisis</h3>
+    
+        <p>
+            Cómo entender el proyecto antes de escribir una sola línea de código.
+        </p>
+    
+        <ul>
+            <li>
+                <strong>Definición de objetivos y alcance:</strong>
+                Converso con el cliente para entender qué problema necesita resolver el sitio y qué resultados espera
+                obtener.
+            </li>
+    
+            <li>
+                <strong>Identificación del público objetivo:</strong>
+                Analizo quién usará el sitio y qué necesidades específicas tiene para adaptar contenido y funcionalidades.
+            </li>
+    
+            <li>
+                <strong>Evaluación de referentes y competencia:</strong>
+                Reviso sitios similares para detectar buenas prácticas y oportunidades de mejora.
+            </li>
+    
+            <li>
+                <strong>Estructuración del contenido:</strong>
+                Organizo la información para que la navegación sea clara, lógica y orientada a la conversión.
+            </li>
+        </ul>
+    
+        <button class="cerrar" aria-label="Cerrar ventana">Cerrar</button>
+    </div>
+
+    <div class="modal" id="diseno" role="dialog" aria-modal="true" aria-labelledby="titulo-diseno">
+        <h3 id="titulo-diseno">Fase 2 — Diseño</h3>
+    
+        <p>
+            Transformar las ideas en una interfaz clara y atractiva.
+        </p>
+    
+        <ul>
+            <li>
+                <strong>Wireframes funcionales:</strong>
+                Diseño la estructura básica de cada sección priorizando usabilidad antes que estética.
+            </li>
+    
+            <li>
+                <strong>Prototipo visual en Figma:</strong>
+                Desarrollo el diseño completo considerando identidad, coherencia visual y experiencia del usuario.
+            </li>
+    
+            <li>
+                <strong>Adaptación responsive:</strong>
+                Aseguro que el sitio funcione correctamente en móvil, tablet y escritorio.
+            </li>
+    
+            <li>
+                <strong>Validación de jerarquía y accesibilidad:</strong>
+                Optimizo tamaños, contrastes y distribución para facilitar la lectura y la interacción.
+            </li>
+        </ul>
+    
+        <button class="cerrar" aria-label="Cerrar ventana">Cerrar</button>
+    </div>
+
+    <div class="modal" id="desarrollo" role="dialog" aria-modal="true" aria-labelledby="titulo-desarrollo">
+        <h3 id="titulo-desarrollo">Fase 3 — Desarrollo</h3>
+    
+        <p>
+            Convertir el diseño en un sitio rápido, funcional y optimizado.
+        </p>
+    
+        <ul>
+            <li>
+                <strong>Maquetación semántica:</strong>
+                Construyo la estructura con HTML accesible y bien organizada.
+            </li>
+    
+            <li>
+                <strong>Estilos modernos y adaptables:</strong>
+                Implemento CSS con Flexbox y Grid para lograr diseño flexible y limpio.
+            </li>
+    
+            <li>
+                <strong>Interactividad con JavaScript:</strong>
+                Agrego funcionalidades necesarias para mejorar la experiencia del usuario.
+            </li>
+    
+            <li>
+                <strong>Optimización y pruebas finales:</strong>
+                Verifico rendimiento, compatibilidad entre navegadores y correcta visualización en diferentes dispositivos.
+            </li>
+        </ul>
+    
+        <button class="cerrar" aria-label="Cerrar ventana">Cerrar</button>
+    </div>
+
+    <div data-include="components/footer.html"></div>
+
+    <div data-include="components/whatsapp.html"></div>
+    
+    <script src="js/include.js"></script>
+    
+    <script src="js/modal-habilidades.js"></script>
+</body>
+
+</html>
