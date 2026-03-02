@@ -1063,17 +1063,23 @@ h3 {
 ================================================== **/
 
 .pagina-gracias {
-    min-height: 80vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 2rem;
 }
 
+/* Tarjeta de confirmación */
+
 .gracias-card {
-    max-width: 55rem;
-    text-align: center;
+    background-color: var(--blanco);
     padding: 4rem 3rem;
+    border-radius: 1.5rem;
+    text-align: center;
+    max-width: 50rem;
+    width: 90%;
+    box-shadow: 0 20px 40px rgba(0,0,0,.15);
 }
 
 .gracias-card h1 {
