@@ -1057,3 +1057,47 @@ h3 {
     50%  { transform: scale(1.07); }
     100% { transform: scale(1); }
 }
+
+/** ==================================================
+    PAGINA GRACIAS
+================================================== **/
+
+.pagina-gracias {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.gracias-card {
+    max-width: 55rem;
+    text-align: center;
+    padding: 4rem 3rem;
+}
+
+.gracias-card h1 {
+    color: var(--segundario);
+    margin-bottom: 1.5rem;
+}
+
+.gracias-card p {
+    font-size: 1.8rem;
+    color: var(--gris);
+    margin-bottom: 3rem;
+    line-height: 1.6;
+}
+
+.gracias-icono {
+    width: 8rem;
+    height: 8rem;
+    margin: 0 auto 2rem;
+    border-radius: 50%;
+    background-color: var(--primario);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.5rem;
+    color: var(--negro);
+    box-shadow: 0 8px 20px rgba(0,0,0,.15);
+}
